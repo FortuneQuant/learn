@@ -3,19 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/learn/posts/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-24T02:25:13+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/learn/posts/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/learn/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-24T02:25:13+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/learn/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/learn/docs/</loc>
+    <lastmod>2024-12-24T03:16:42+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/learn/docs/s2024-12-24/</loc>
+    <lastmod>2024-12-24T03:16:42+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/learn/</loc>
+    <lastmod>2024-12-24T02:25:13+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/learn/tags/</loc>
   </url>
