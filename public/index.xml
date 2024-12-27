@@ -8,25 +8,18 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/learn/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Creating a New Theme</title>
-      <link>http://localhost:1313/learn/posts/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/posts/creating-a-new-theme/</guid>
-      <description>Introduction # This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&#xA;We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    <item>
       <title>Finance News</title>
-      <link>http://localhost:1313/learn/docs/daily/fin_news/</link>
+      <link>http://localhost:1313/learn/docs/daily/news/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/docs/daily/fin_news/</guid>
-      <description>Reference: Big Debt Crisis</description>
+      <guid>http://localhost:1313/learn/docs/daily/news/</guid>
+      <description>Empty</description>
     </item>
     <item>
-      <title>Quant Paper</title>
-      <link>http://localhost:1313/learn/docs/daily/quant_paper/</link>
+      <title>Quant Papers</title>
+      <link>http://localhost:1313/learn/docs/daily/papers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/docs/daily/quant_paper/</guid>
-      <description> DFT: A Dual-branch Framework of Fluctuation and Trend for Stock Price Prediction wechat code </description>
+      <guid>http://localhost:1313/learn/docs/daily/papers/</guid>
+      <description> Novy-Marx &amp;amp; Velikov AI-Powered (Finance) Scholarship - Dec 16, 2024 Assaying Anomalies - Feb 13, 2024 </description>
     </item>
   </channel>
 </rss>
