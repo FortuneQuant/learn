@@ -33,7 +33,7 @@ menu:
       url: "https://github.com/FortuneQuant/learn"
       weight: 10
     - name: "Guide"
-      url: "/"
+      url: "https://dafuzhu.com"
       weight: 20
 
 params:
