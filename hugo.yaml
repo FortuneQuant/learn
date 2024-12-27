@@ -32,6 +32,9 @@ menu:
     - name: "Github"
       url: "https://github.com/FortuneQuant/learn"
       weight: 10
+    - name: "Guide"
+      url: "/"
+      weight: 20
 
 params:
   # (Optional, default light) Sets color theme: light, dark or auto.
