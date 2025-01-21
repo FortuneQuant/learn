@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/learn/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=learn/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Website: Decentralized Finance (DeFi)
+Book: DeFi and the Future of Finance
+History # Barter is the first DeFi: peer-to-peer, but very inefficient because of matching problem.
+Purpose of money:
+Unit of account Medium of exchange ** Store of value Transfer of value 2008: Bitcoin
+2021: Blockchain
+Assume that all major financial institutions around the world are looking at the potential of tokenization, stablecoins and frictionless payments. &ndash; David Solomon, CEO Goldman Sachs">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/learn/docs/winter-25/defi/">
+  <meta property="og:site_name" content="Self-Learn">
+  <meta property="og:title" content="DeFi">
+  <meta property="og:description" content="Website: Decentralized Finance (DeFi)
+Book: DeFi and the Future of Finance
+History # Barter is the first DeFi: peer-to-peer, but very inefficient because of matching problem.
+Purpose of money:
+Unit of account Medium of exchange ** Store of value Transfer of value 2008: Bitcoin
+2021: Blockchain
+Assume that all major financial institutions around the world are looking at the potential of tokenization, stablecoins and frictionless payments. – David Solomon, CEO Goldman Sachs">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>DeFi | Self-Learn</title>
+<link rel="icon" href="/learn/favicon.png" >
+<link rel="manifest" href="/learn/manifest.json">
+<link rel="canonical" href="http://localhost:1313/learn/docs/winter-25/defi/">
+<link rel="stylesheet" href="/learn/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/learn/fuse.min.js"></script>
+  <script defer src="/learn/en.search.min.7a2873be0bc70de211eaa6bb1d8ed4e006555a3f37a7dcdae8962818df9db4ce.js" integrity="sha256-eihzvgvHDeIR6qa7HY7U4AZVWj83p9za6JYoGN&#43;dtM4=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/learn/"><span>Self-Learn</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dff92595d21da9491dfd1521b8adf5a3" class="toggle" checked />
+    <label for="section-dff92595d21da9491dfd1521b8adf5a3" class="flex justify-between">
+      <a href="/learn/docs/winter-25/" class="">Winter 25</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/learn/docs/winter-25/defi/" class="active">DeFi</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/learn/docs/winter-25/ml_with_python/" class="">ML with python (MITx)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/learn/docs/winter-25/probability/" class="">Probability recap</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/learn/docs/winter-25/ode/" class="">ODE</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/learn/docs/winter-25/dl/" class="">Deep learning</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/learn/docs/pending/" class="">Pending</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0a8002f4da946d13835a4f7ef662a96" class="toggle"  />
+    <label for="section-e0a8002f4da946d13835a4f7ef662a96" class="flex justify-between">
+      <a href="/learn/docs/reproduce/" class="">Reproduce</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/learn/docs/reproduce/feng-xu-2024/" class="">Feng xu (2024)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/learn/docs/reproduce/naftali-cohen-2020/" class="">Naftali Cohen (2020)</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/learn/docs/certificates/" class="">Certificates</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/FortuneQuant/learn"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/learn/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>DeFi</h3>
+
+  <label for="toc-control">
+    
+    <img src="/learn/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#history">History</a>
+      <ul>
+        <li><a href="#problems-of-cefi">Problems of CeFi</a></li>
+        <li><a href="#origin-of-defi">Origin of DeFi</a></li>
+      </ul>
+    </li>
+    <li><a href="#defi-foundations">DeFi Foundations</a>
+      <ul>
+        <li><a href="#blockchain">Blockchain</a></li>
+      </ul>
+    </li>
+    <li><a href="#problems-defi-solved">Problems DeFi Solved</a></li>
+    <li><a href="#risk">Risk</a>
+      <ul>
+        <li><a href="#smart-contract-risk">Smart contract risk</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p>Website: <a href="https://www.coursera.org/specializations/decentralized-finance-duke">Decentralized Finance (DeFi)</a></p>
+<p>Book: <a href="https://www.zotero.org/dafuzhu123/collections/R28S2AQK/items/SHDI3Q5B/reader">DeFi and the Future of Finance</a></p>
+<h2 id="history">
+  History
+  <a class="anchor" href="#history">#</a>
+</h2>
+<p>Barter is the first DeFi: peer-to-peer, but very inefficient because of matching problem.</p>
+<p>Purpose of money:</p>
+<ul>
+<li>Unit of account</li>
+<li>Medium of exchange **</li>
+<li>Store of value</li>
+<li>Transfer of value</li>
+</ul>
+<p>2008: <a href="https://www.zotero.org/dafuzhu123/collections/CFK9WT4X/items/JE8HINIU/reader">Bitcoin</a></p>
+<p>2021: Blockchain</p>
+<blockquote>
+<p>Assume that all major financial institutions around the world are looking at the potential of tokenization, stablecoins and frictionless payments. &ndash; David Solomon, CEO Goldman Sachs</p>
+</blockquote>
+<p>It is possible that money to have value even the currency isn&rsquo;t necessarily backed by anything (<em>Iraqi Swiss dinar</em> is an example)</p>
+<p>Intangible value of money is important for crypto space in general.</p>
+<p>DeFi:</p>
+<ul>
+<li>Enables peer to peer transactions without a centralized instituition</li>
+<li>Tokenization -&gt; efficient barter mechanism</li>
+</ul>
+<h3 id="problems-of-cefi">
+  Problems of CeFi
+  <a class="anchor" href="#problems-of-cefi">#</a>
+</h3>
+<ul>
+<li>Centralized control</li>
+<li>Limited access: unbanked / underbanked</li>
+<li>Inefficiency: 3% retail paid, 5-7% wire transfer, 2 days settlement time for stock transaction</li>
+<li>Lack of interoperability: Plaid, but blocked by regulators</li>
+<li>Opacity: need to rely on regulations</li>
+<li>Inequality of opportunities</li>
+</ul>
+<h3 id="origin-of-defi">
+  Origin of DeFi
+  <a class="anchor" href="#origin-of-defi">#</a>
+</h3>
+<p>Origin of DeFi: &ldquo;dark pool&rdquo; trading, 1979</p>
+<ul>
+<li>1991 Haber and Stornetta: Blockchain</li>
+<li>2002: Initiated by the idea of requiring email sender to do a computational task before sending email to eliminate junk mail. Though low cost for one, high cost for millions</li>
+<li>2008: <a href="https://www.zotero.org/dafuzhu123/collections/CFK9WT4X/items/JE8HINIU/reader">Satoshi Nakamoto</a></li>
+</ul>
+<p>Raised blockchain and proof-of-work. PoW ensures that the ledger could not be edited unless extreme computing power was available.</p>
+<p>Crypto</p>
+<ol>
+<li>eliminates the problem of double-spending</li>
+<li>every transaction kept in immutable ledger</li>
+<li>cryptographic scarcity: 21 million bitcoins</li>
+<li>user sovereignty</li>
+<li>portability</li>
+</ol>
+<p>Ethereum: uses smart contract</p>
+<p>dApps: no centralized, network effects</p>
+<p>Proof-of-Work is a consensus mechanism of Bitcoin, used to solve &ldquo;double spending&rdquo; problem.</p>
+<h2 id="defi-foundations">
+  DeFi Foundations
+  <a class="anchor" href="#defi-foundations">#</a>
+</h2>
+<h3 id="blockchain">
+  Blockchain
+  <a class="anchor" href="#blockchain">#</a>
+</h3>
+<p>Trust is within technology, not different parties &ndash; very different from CeFi.</p>
+<p>Blockchain is a special ledger</p>
+<ul>
+<li>distributed</li>
+</ul>
+<p><img src="../image/distributed.png" alt="distributed" /></p>
+<p>Every 10 min, Bitcoin broke into blocks and check the fingerprint of the connection part of each block. It won&rsquo;t match if one is broken.</p>
+<p>Last line (hash) is repeated as the first line in the next block. -&gt; chain</p>
+<p>Altering any data in block 1 means the last line will change and will not match the first line in block 2.</p>
+<p><strong>Hashing</strong></p>
+<p><a href="https://emn178.github.io/online-tools/sha256.html">SHA256</a></p>
+<p>Hashing is a one-way function</p>
+<p>Ethereum blockchain uses Keccak-256</p>
+<p>Miners add some data called nonce (number only once) to find a hash that get lots of leading zeros. It makes it difficult for adversary to change a block then change the future blocks to make everything works. Miners give blockchain unprecedented security.</p>
+<p>An attacker needs to amass 51% of the network power (boundary of PoW security)</p>
+<p><strong>Cryptocurrency</strong></p>
+<p>It is a digital token.</p>
+<ul>
+<li>asymmetric key cryptography</li>
+</ul>
+<p>private key &amp; public key: like ssh</p>
+<p>Users of smart contracts need to pay a fee called <strong>gas</strong>.</p>
+<p>Ethereum is turing complete -&gt; 1. if 2. for loop 3. store data</p>
+<p>In the context of smart contract platforms, an <strong>oracle</strong> is any data source for reporting information external to the blockchain.</p>
+<p>Mining is asscocated with both strength (security) and weakness (costly).</p>
+<p>Reasons of cryptos being volatility: no tangible value, bad liquidity</p>
+<h2 id="problems-defi-solved">
+  Problems DeFi Solved
+  <a class="anchor" href="#problems-defi-solved">#</a>
+</h2>
+<h2 id="risk">
+  Risk
+  <a class="anchor" href="#risk">#</a>
+</h2>
+<p>DeFi closes the counterparty risk, and introduces a new class of risks.</p>
+<h3 id="smart-contract-risk">
+  Smart contract risk
+  <a class="anchor" href="#smart-contract-risk">#</a>
+</h3>
+<p>The key component in DeFi is a smart contract. If there are issues with that smart contract, then that opens the door to an exploit.</p>
+<p>The software foundation gives attackers a large attack surface. Public blockchains are open systems, so if there&rsquo;s any flaw in the code, it&rsquo;s going to be exploited. This won&rsquo;t be a problem in CeFi because people cannot enter the private website. This new attack vector is termed <strong>smart contract risk</strong>.</p>
+<p><strong>Audit</strong></p>
+<p>You develop your smart contract, you want to make sure there&rsquo;s no mistake. So companies will employ a third party auditor to go through and stress test the smart contract. Sometimes you&rsquo;ll employ two auditors.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#history">History</a>
+      <ul>
+        <li><a href="#problems-of-cefi">Problems of CeFi</a></li>
+        <li><a href="#origin-of-defi">Origin of DeFi</a></li>
+      </ul>
+    </li>
+    <li><a href="#defi-foundations">DeFi Foundations</a>
+      <ul>
+        <li><a href="#blockchain">Blockchain</a></li>
+      </ul>
+    </li>
+    <li><a href="#problems-defi-solved">Problems DeFi Solved</a></li>
+    <li><a href="#risk">Risk</a>
+      <ul>
+        <li><a href="#smart-contract-risk">Smart contract risk</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

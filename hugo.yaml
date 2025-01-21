@@ -1,4 +1,23 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+# hugo server --minify --themesDir ../.. --baseURL=http://0.0.0.0:1313/theme/hugo-book/
+
+baseURL: https://fortunequant.github.io/learn/
+title: Self-Learn
 theme: hugo-book
+
+# Multi-lingual mode config
+# There are different options to translate files
+# See https://gohugo.io/content-management/multilingual/#translation-by-filename
+# And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+languages:
+  en:
+    languageName: English
+    contentDir: content
+    weight: 1
+
+menu:
+  # before: []
+  after:
+    - name: "Github"
+      url: "https://github.com/FortuneQuant/learn"
+      weight: 10
+

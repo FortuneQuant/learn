@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on Self-Learn</title>
+    <link>http://localhost:1313/learn/</link>
+    <description>Recent content in Introduction on Self-Learn</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/learn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DeFi</title>
+      <link>http://localhost:1313/learn/docs/winter-25/defi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/defi/</guid>
+      <description>Website: Decentralized Finance (DeFi)&#xA;Book: DeFi and the Future of Finance&#xA;History # Barter is the first DeFi: peer-to-peer, but very inefficient because of matching problem.&#xA;Purpose of money:&#xA;Unit of account Medium of exchange ** Store of value Transfer of value 2008: Bitcoin&#xA;2021: Blockchain&#xA;Assume that all major financial institutions around the world are looking at the potential of tokenization, stablecoins and frictionless payments. &amp;ndash; David Solomon, CEO Goldman Sachs</description>
+    </item>
+    <item>
+      <title>ML with python (MITx)</title>
+      <link>http://localhost:1313/learn/docs/winter-25/ml_with_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/ml_with_python/</guid>
+      <description> micromaster </description>
+    </item>
+    <item>
+      <title>Probability recap</title>
+      <link>http://localhost:1313/learn/docs/winter-25/probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/probability/</guid>
+      <description>Textbook: A First Course in Probability&#xA;Coursera: Probability Theory</description>
+    </item>
+    <item>
+      <title>ODE</title>
+      <link>http://localhost:1313/learn/docs/winter-25/ode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/ode/</guid>
+      <description>Textbook: Ordinary Differential Equation (Zhonglei Wang)</description>
+    </item>
+    <item>
+      <title>Deep learning</title>
+      <link>http://localhost:1313/learn/docs/winter-25/dl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/dl/</guid>
+      <description>Textbook: Datawhale - 深度学习详解</description>
+    </item>
+    <item>
+      <title>Feng xu (2024)</title>
+      <link>http://localhost:1313/learn/docs/reproduce/feng-xu-2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/reproduce/feng-xu-2024/</guid>
+      <description> Discovering Logical Formulaic Alphas using Deep Reinforcement Learning # Paper Code </description>
+    </item>
+    <item>
+      <title>Fin Math</title>
+      <link>http://localhost:1313/learn/docs/winter-25/fin_math/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/fin_math/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Financial Engineering</title>
+      <link>http://localhost:1313/learn/docs/winter-25/financial_engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/financial_engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Investment</title>
+      <link>http://localhost:1313/learn/docs/winter-25/investment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/investment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Naftali Cohen (2020)</title>
+      <link>http://localhost:1313/learn/docs/reproduce/naftali-cohen-2020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/reproduce/naftali-cohen-2020/</guid>
+      <description> Trading via Image Classification # Paper Code </description>
+    </item>
+    <item>
+      <title>Numerical Analysis</title>
+      <link>http://localhost:1313/learn/docs/winter-25/numerical_analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/numerical_analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statistics</title>
+      <link>http://localhost:1313/learn/docs/winter-25/statistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/statistics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Time Series Analysis</title>
+      <link>http://localhost:1313/learn/docs/winter-25/time_series_analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/time_series_analysis/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

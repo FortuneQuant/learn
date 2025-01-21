@@ -1,0 +1,15 @@
+{
+  "name": "Self-Learn",
+  "short_name": "Self-Learn",
+  "start_url": "/learn/",
+  "scope": "/learn/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/learn/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}
