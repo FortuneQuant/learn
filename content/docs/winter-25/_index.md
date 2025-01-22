@@ -19,7 +19,7 @@ Ends on: 2.15
 
 ### Review on Undergrad Math
 
-- [Probability](probability): 1.22 ~ 
+- [Probability](probability)
 - Statistics
 - Financial mathematics
 - Numerical analysis
@@ -28,7 +28,7 @@ Ends on: 2.15
 ### Learn New
 
 - [ODE](ode)
-- [Deep learning](dl)
+- [Deep learning](dl): 1.22 ~ 
 
 ### Review on Finance
 
