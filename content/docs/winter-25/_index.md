@@ -19,18 +19,18 @@ Ends on: 2.15
 
 ### Review on Undergrad Math
 
-- [Probability](probability) - 3 days: 1.22 ~ 
-- Statistics - 3 days
-- Financial mathematics - 3 days
-- Numerical analysis - 2 days
-- Time series analysis - 2 days
+- [Probability](probability): 1.22 ~ 
+- Statistics
+- Financial mathematics
+- Numerical analysis
+- Time series analysis
 
 ### Learn New
 
-- [ODE](ode) - 7 days
+- [ODE](ode)
 - [Deep learning](dl)
 
 ### Review on Finance
 
-- Investment - 3 days
-- Financial engineering - 3 days
+- Investment
+- Financial engineering

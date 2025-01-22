@@ -1,6 +1,5 @@
 ---
 title: Probability recap
-weight: 40
 ---
 
 Textbook: [A First Course in Probability](https://www.zotero.org/dafuzhu123/collections/R28S2AQK/items/GK2AK346/reader)
