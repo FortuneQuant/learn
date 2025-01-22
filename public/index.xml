@@ -15,32 +15,11 @@
       <description>Website: Decentralized Finance (DeFi)&#xA;Book: DeFi and the Future of Finance&#xA;History # Barter is the first DeFi: peer-to-peer, but very inefficient because of matching problem.&#xA;Purpose of money:&#xA;Unit of account Medium of exchange ** Store of value Transfer of value 2008: Bitcoin&#xA;2021: Blockchain&#xA;Assume that all major financial institutions around the world are looking at the potential of tokenization, stablecoins and frictionless payments. &amp;ndash; David Solomon, CEO Goldman Sachs</description>
     </item>
     <item>
-      <title>ML with python (MITx)</title>
-      <link>http://localhost:1313/learn/docs/winter-25/ml_with_python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/docs/winter-25/ml_with_python/</guid>
-      <description> micromaster </description>
-    </item>
-    <item>
-      <title>Probability recap</title>
-      <link>http://localhost:1313/learn/docs/winter-25/probability/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/docs/winter-25/probability/</guid>
-      <description>Textbook: A First Course in Probability&#xA;Coursera: Probability Theory</description>
-    </item>
-    <item>
-      <title>ODE</title>
-      <link>http://localhost:1313/learn/docs/winter-25/ode/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/docs/winter-25/ode/</guid>
-      <description>Textbook: Ordinary Differential Equation (Zhonglei Wang)</description>
-    </item>
-    <item>
       <title>Deep learning</title>
       <link>http://localhost:1313/learn/docs/winter-25/dl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/learn/docs/winter-25/dl/</guid>
-      <description>Textbook: Datawhale - 深度学习详解</description>
+      <description>Textbook: Datawhale - 深度学习详解&#xA;Video: 李宏毅机器学习2022&#xA;Lecture 1 Intro # </description>
     </item>
     <item>
       <title>Feng xu (2024)</title>
@@ -71,6 +50,13 @@
       <description></description>
     </item>
     <item>
+      <title>ML with python (MITx)</title>
+      <link>http://localhost:1313/learn/docs/winter-25/ml_with_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/ml_with_python/</guid>
+      <description> micromaster </description>
+    </item>
+    <item>
       <title>Naftali Cohen (2020)</title>
       <link>http://localhost:1313/learn/docs/reproduce/naftali-cohen-2020/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -83,6 +69,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/learn/docs/winter-25/numerical_analysis/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>ODE</title>
+      <link>http://localhost:1313/learn/docs/winter-25/ode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/ode/</guid>
+      <description>Textbook: Ordinary Differential Equation (Zhonglei Wang)</description>
+    </item>
+    <item>
+      <title>Probability recap</title>
+      <link>http://localhost:1313/learn/docs/winter-25/probability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/winter-25/probability/</guid>
+      <description>Textbook: A First Course in Probability&#xA;Coursera: Probability Theory</description>
     </item>
     <item>
       <title>Statistics</title>
