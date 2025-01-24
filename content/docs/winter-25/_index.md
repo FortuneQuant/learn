@@ -17,6 +17,13 @@ Ends on: 2.15
 
 - [Machine learning with python](ml_with_python): 1.29 ~
 
+### Learn New
+
+- [Introduction to WorldQuant BRAIN](../worldquant_brain/intro_to_brain): 1.25 ~ 
+
+- [ODE](ode)
+- [Deep learning](dl): 1.22 ~ 
+
 ### Review on Undergrad Math
 
 - [Probability](probability)
@@ -24,11 +31,6 @@ Ends on: 2.15
 - Financial mathematics
 - Numerical analysis
 - Time series analysis
-
-### Learn New
-
-- [ODE](ode)
-- [Deep learning](dl): 1.22 ~ 
 
 ### Review on Finance
 

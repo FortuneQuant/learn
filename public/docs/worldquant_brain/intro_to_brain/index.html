@@ -3,19 +3,32 @@
 <head><script src="/learn/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=learn/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="Introduction to Alphas # For official materials, click here
+Equity long-short market neutral strategy
+Goal: minimize exposure to the market in general, and profit from a change in the spread between two stocks
+1. Inside simulation # Key settings: Delay, Decay
+When you click &ldquo;simulate&rdquo;
+Step 1: Evaluate the expression for each stock to generate the alpha vector for the given date.
+Step 2: From each value in the vector, subtract the average of the vector values in the group.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/learn/docs/winter-25/financial_engineering/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/learn/docs/worldquant_brain/intro_to_brain/">
   <meta property="og:site_name" content="Self-Learn">
-  <meta property="og:title" content="Financial Engineering">
+  <meta property="og:title" content="Introduction to BRAIN">
+  <meta property="og:description" content="Introduction to Alphas # For official materials, click here
+Equity long-short market neutral strategy
+Goal: minimize exposure to the market in general, and profit from a change in the spread between two stocks
+1. Inside simulation # Key settings: Delay, Decay
+When you click “simulate”
+Step 1: Evaluate the expression for each stock to generate the alpha vector for the given date.
+Step 2: From each value in the vector, subtract the average of the vector values in the group.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-<title>Financial Engineering | Self-Learn</title>
+<title>Introduction to BRAIN | Self-Learn</title>
 <link rel="icon" href="/learn/favicon.png" >
 <link rel="manifest" href="/learn/manifest.json">
-<link rel="canonical" href="http://localhost:1313/learn/docs/winter-25/financial_engineering/">
+<link rel="canonical" href="http://localhost:1313/learn/docs/worldquant_brain/intro_to_brain/">
 <link rel="stylesheet" href="/learn/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
   <script defer src="/learn/fuse.min.js"></script>
   <script defer src="/learn/en.search.min.fe54d3538f72c0e1e9804c6b680a352d7d3a6a0c650a224e15b464be5bbe0013.js" integrity="sha256-/lTTU49ywOHpgExraAo1LX06agxlCiJOFbRkvlu&#43;ABM=" crossorigin="anonymous"></script>
@@ -27,6 +40,23 @@ Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
   
+  
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+
   
 </head>
 <body dir="ltr">
@@ -74,7 +104,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-64916e49d08ac3841ea5cd8cfa9a76e7" class="toggle"  />
+    <input type="checkbox" id="section-64916e49d08ac3841ea5cd8cfa9a76e7" class="toggle" checked />
     <label for="section-64916e49d08ac3841ea5cd8cfa9a76e7" class="flex justify-between">
       <a href="/learn/docs/worldquant_brain/" class="">WorldQuant</a>
     </label>
@@ -90,7 +120,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/learn/docs/worldquant_brain/intro_to_brain/" class="">Introduction to BRAIN</a>
+    <a href="/learn/docs/worldquant_brain/intro_to_brain/" class="active">Introduction to BRAIN</a>
   
 
         </li>
@@ -108,7 +138,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-dff92595d21da9491dfd1521b8adf5a3" class="toggle" checked />
+    <input type="checkbox" id="section-dff92595d21da9491dfd1521b8adf5a3" class="toggle"  />
     <label for="section-dff92595d21da9491dfd1521b8adf5a3" class="flex justify-between">
       <a href="/learn/docs/winter-25/" class="">Winter 25</a>
     </label>
@@ -329,7 +359,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/learn/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Financial Engineering</h3>
+  <h3>Introduction to BRAIN</h3>
 
   <label for="toc-control">
     
@@ -343,7 +373,17 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction-to-alphas">Introduction to Alphas</a>
+      <ul>
+        <li><a href="#1-inside-simulation">1. Inside simulation</a></li>
+        <li><a href="#2-simulation-results">2. Simulation results</a></li>
+        <li><a href="#3-os-test">3. OS test</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -354,7 +394,86 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"></article>
+  <article class="markdown book-article"><h2 id="introduction-to-alphas">
+  Introduction to Alphas
+  <a class="anchor" href="#introduction-to-alphas">#</a>
+</h2>
+<p>For official materials, click <a href="https://platform.worldquantbrain.com/learn/courses/introduction-alphas">here</a></p>
+<p><strong>Equity long-short market neutral strategy</strong></p>
+<p>Goal: minimize exposure to the market in general, and <strong>profit from a change</strong> in the spread between two stocks</p>
+<h3 id="1-inside-simulation">
+  1. Inside simulation
+  <a class="anchor" href="#1-inside-simulation">#</a>
+</h3>
+<p>Key settings: Delay, Decay</p>
+<p>When you click &ldquo;simulate&rdquo;</p>
+<p><strong>Step 1</strong>: Evaluate the expression for each stock to generate the alpha vector for the given date.</p>
+<p><strong>Step 2</strong>: From each value in the vector, subtract the average of the vector values in the group. Sum of all vector values = 0. (Neutralization)</p>
+<p><strong>Step 3</strong>: The resulting values are scaled or ‘normalized’ such that the absolute sum of the alpha vector values is 1. These values can be called as normalized weights.</p>
+<p><strong>Step 4</strong>: Using normalized weights, the BRAIN simulator allocates capital (from a fictitious book of $20 million) to each stock to construct a portfolio.</p>
+<p><strong>Step 5</strong>: Calculate next day PnL based on observed stock returns the next day.</p>
+<p><strong>Step 6</strong>: Perform the operations in Step 1 to Step 5 for each date in a several-year history span also called the In-sample period (IS) to get daily PnL generated for each day.</p>
+<p><strong>Step 7</strong>: Calculate the cumulative PnL of the alpha from the start of the in-sample period to get the PnL chart of the alpha.</p>
+<p>If Decay is used
+$$
+\text{Decay_linear}(x,n)=\frac{x_t\times n+x_{t-1}\times (n-1)+\cdots+x_{t-n-1}}{n+(n-1)+\cdots+1}
+$$</p>
+<h3 id="2-simulation-results">
+  2. Simulation results
+  <a class="anchor" href="#2-simulation-results">#</a>
+</h3>
+<p>Most important: <strong>Information Ratio (IR)</strong>
+$$
+IR=\frac{mean(returns)}{std(returns)}
+$$</p>
+<p>Need to be high and consistent over years
+$$
+Sharpe=IR\times \sqrt{252}
+$$
+<strong>Turnover (tvr)</strong></p>
+<p>Represents the cost of trading
+$$
+tvr=\frac{\text{Value traded}}{\text{Value held}}
+$$
+The <em>lower</em> the turnover the better (&lt; 40%)</p>
+<p>Usually delay-0 alphas have higher turnover</p>
+<h3 id="3-os-test">
+  3. OS test
+  <a class="anchor" href="#3-os-test">#</a>
+</h3>
+<ul>
+<li>
+<p>Base tests</p>
+<ul>
+<li>
+<p>Check weight: ensures diversify</p>
+</li>
+<li>
+<p>Subuniverse value: the Sharpe in the next smallest standard universe (e.g. the subuniverse of Sector is Industry)</p>
+<p>Pass when greater than</p>
+<ul>
+<li>
+<p>Delay 1
+$$
+\sqrt{252}\times \max(0.065, 0.15\times \frac{S_{sub}}{S_{max}})
+$$</p>
+</li>
+<li>
+<p>Delay 0
+$$
+\sqrt{252}\times \max(0.065, 0.25\times \frac{S_{sub}}{S_{max}})
+$$</p>
+</li>
+</ul>
+<p>Where $S_{sub}$ is the sub-universe size, $S_{max}$ is the largest universe size</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Performance tests</p>
+</li>
+</ul>
+</article>
  
       
 
@@ -379,6 +498,10 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -389,7 +512,17 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction-to-alphas">Introduction to Alphas</a>
+      <ul>
+        <li><a href="#1-inside-simulation">1. Inside simulation</a></li>
+        <li><a href="#2-simulation-results">2. Simulation results</a></li>
+        <li><a href="#3-os-test">3. OS test</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
  

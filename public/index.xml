@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="http://localhost:1313/learn/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Introduction to BRAIN</title>
+      <link>http://localhost:1313/learn/docs/worldquant_brain/intro_to_brain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/worldquant_brain/intro_to_brain/</guid>
+      <description>Introduction to Alphas # For official materials, click here&#xA;Equity long-short market neutral strategy&#xA;Goal: minimize exposure to the market in general, and profit from a change in the spread between two stocks&#xA;1. Inside simulation # Key settings: Delay, Decay&#xA;When you click &amp;ldquo;simulate&amp;rdquo;&#xA;Step 1: Evaluate the expression for each stock to generate the alpha vector for the given date.&#xA;Step 2: From each value in the vector, subtract the average of the vector values in the group.</description>
+    </item>
+    <item>
       <title>DeFi</title>
       <link>http://localhost:1313/learn/docs/winter-25/defi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
