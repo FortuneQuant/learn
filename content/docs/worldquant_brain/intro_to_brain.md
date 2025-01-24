@@ -61,13 +61,15 @@ Usually delay-0 alphas have higher turnover
 
 ### 3. OS test
 
-- Base tests
+**Base tests**
 
-  - Check weight: ensures diversify
+- Check weight: ensures diversify
 
-  - Subuniverse value: the Sharpe in the next smallest standard universe (e.g. the subuniverse of Sector is Industry)
+- Subuniverse value
 
-    Pass when greater than
+  - Definition: the Sharpe in the next smallest standard universe (e.g. the subuniverse of Sector is Industry)
+
+  - Pass when greater than
 
     - Delay 1
       $$
@@ -81,9 +83,62 @@ Usually delay-0 alphas have higher turnover
 
     Where $S_{sub}$ is the sub-universe size, $S_{max}$ is the largest universe size
 
-- Performance tests
+  - Tips: Always check in **the next smallest universe** first
 
-  
+- Superuniverse value
+
+  - Definition: ... next largest ...
+
+  - Pass when greater than
+
+  $$
+  0.7\times \text{Sharpe of alpha}
+  $$
+
+- Ranked sharpe
+
+  - Definition: Sharpe of the alpha after applying the **Rank** and **Power** operators (exp=3) to each side of the alpha, each side is then **rescaled** to its original size
+
+  - Example, 
+    $$
+    \alpha_t=[0.3,-0.1,0.2,0.5]\xrightarrow{Rank}[3,1,2,4]\xrightarrow{Power}[3^3, 1^3, 2^3, 4^3]=\alpha_t'
+    $$
+
+    $$
+    \xrightarrow{rescale}\alpha_t''=\mu_t+\frac{\alpha_t'-\mu_t'}{\sigma_t'}\cdot \sigma_t
+    $$
+
+  - Pass if
+
+    - Sharpe is positive
+    - Meet one of the following
+      - Ratio of ranked Sharpe to original $\geqslant 0.5$
+      - Rank Sharpe $> 0.15$
+
+- Bias test
+
+  - Definition: Detect any forward bias
+  - `[di-delay]` in python code is required
+
+- Correlation test
+
+  Pass if one of the following criteria is met
+
+  - PnL correlation with any external WebSim alpha is $< 0.7$
+  - Alpha's **PnL**, **positions** or **trade correlation** with any external WebSim alpha in the same group is $<0.4$
+  - Alpha has 10% higher Sharpe than any alpha in the same group with **PnL**, **positions** or **trade correlation** above the 0.7 threshold
+
+- ISSharpe
+
+  - Definition: filters random noise from true alpha
+  - aim for consistent performance across years and maximize sharpe
+
+**Performance tests**
+
+- OSSharpe
+  - Separates random noise from true alpha, alpha must meet the Sharpe requirement for different intervals to pass this test
+- New high test
+  - Reaches a new high in cumulative PnL
 
 
 

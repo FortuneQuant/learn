@@ -31,7 +31,7 @@ Step 2: From each value in the vector, subtract the average of the vector values
 <link rel="canonical" href="http://localhost:1313/learn/docs/worldquant_brain/intro_to_brain/">
 <link rel="stylesheet" href="/learn/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
   <script defer src="/learn/fuse.min.js"></script>
-  <script defer src="/learn/en.search.min.fe54d3538f72c0e1e9804c6b680a352d7d3a6a0c650a224e15b464be5bbe0013.js" integrity="sha256-/lTTU49ywOHpgExraAo1LX06agxlCiJOFbRkvlu&#43;ABM=" crossorigin="anonymous"></script>
+  <script defer src="/learn/en.search.min.e2ffa2e712a6d0ca3f1303f5d99a270a5b358fd3d9e2934d984950756ccf3432.js" integrity="sha256-4v&#43;i5xKm0Mo/EwP12ZonCls1j9PZ4pNNmElQdWzPNDI=" crossorigin="anonymous"></script>
 
   
 
@@ -441,15 +441,18 @@ The <em>lower</em> the turnover the better (&lt; 40%)</p>
   3. OS test
   <a class="anchor" href="#3-os-test">#</a>
 </h3>
-<ul>
-<li>
-<p>Base tests</p>
+<p><strong>Base tests</strong></p>
 <ul>
 <li>
 <p>Check weight: ensures diversify</p>
 </li>
 <li>
-<p>Subuniverse value: the Sharpe in the next smallest standard universe (e.g. the subuniverse of Sector is Industry)</p>
+<p>Subuniverse value</p>
+<ul>
+<li>
+<p>Definition: the Sharpe in the next smallest standard universe (e.g. the subuniverse of Sector is Industry)</p>
+</li>
+<li>
 <p>Pass when greater than</p>
 <ul>
 <li>
@@ -467,10 +470,89 @@ $$</p>
 </ul>
 <p>Where $S_{sub}$ is the sub-universe size, $S_{max}$ is the largest universe size</p>
 </li>
+<li>
+<p>Tips: Always check in <strong>the next smallest universe</strong> first</p>
+</li>
 </ul>
 </li>
 <li>
-<p>Performance tests</p>
+<p>Superuniverse value</p>
+<ul>
+<li>
+<p>Definition: &hellip; next largest &hellip;</p>
+</li>
+<li>
+<p>Pass when greater than</p>
+</li>
+</ul>
+<p>$$
+0.7\times \text{Sharpe of alpha}
+$$</p>
+</li>
+<li>
+<p>Ranked sharpe</p>
+<ul>
+<li>
+<p>Definition: Sharpe of the alpha after applying the <strong>Rank</strong> and <strong>Power</strong> operators (exp=3) to each side of the alpha, each side is then <strong>rescaled</strong> to its original size</p>
+</li>
+<li>
+<p>Example,
+$$
+\alpha_t=[0.3,-0.1,0.2,0.5]\xrightarrow{Rank}[3,1,2,4]\xrightarrow{Power}[3^3, 1^3, 2^3, 4^3]=\alpha_t'
+$$</p>
+<p>$$
+\xrightarrow{rescale}\alpha_t&rsquo;&rsquo;=\mu_t+\frac{\alpha_t&rsquo;-\mu_t&rsquo;}{\sigma_t&rsquo;}\cdot \sigma_t
+$$</p>
+</li>
+<li>
+<p>Pass if</p>
+<ul>
+<li>Sharpe is positive</li>
+<li>Meet one of the following
+<ul>
+<li>Ratio of ranked Sharpe to original $\geqslant 0.5$</li>
+<li>Rank Sharpe $&gt; 0.15$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Bias test</p>
+<ul>
+<li>Definition: Detect any forward bias</li>
+<li><code>[di-delay]</code> in python code is required</li>
+</ul>
+</li>
+<li>
+<p>Correlation test</p>
+<p>Pass if one of the following criteria is met</p>
+<ul>
+<li>PnL correlation with any external WebSim alpha is $&lt; 0.7$</li>
+<li>Alpha&rsquo;s <strong>PnL</strong>, <strong>positions</strong> or <strong>trade correlation</strong> with any external WebSim alpha in the same group is $&lt;0.4$</li>
+<li>Alpha has 10% higher Sharpe than any alpha in the same group with <strong>PnL</strong>, <strong>positions</strong> or <strong>trade correlation</strong> above the 0.7 threshold</li>
+</ul>
+</li>
+<li>
+<p>ISSharpe</p>
+<ul>
+<li>Definition: filters random noise from true alpha</li>
+<li>aim for consistent performance across years and maximize sharpe</li>
+</ul>
+</li>
+</ul>
+<p><strong>Performance tests</strong></p>
+<ul>
+<li>OSSharpe
+<ul>
+<li>Separates random noise from true alpha, alpha must meet the Sharpe requirement for different intervals to pass this test</li>
+</ul>
+</li>
+<li>New high test
+<ul>
+<li>Reaches a new high in cumulative PnL</li>
+</ul>
 </li>
 </ul>
 </article>
