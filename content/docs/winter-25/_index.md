@@ -26,6 +26,8 @@ Ends on: 2.15
 
 ### Review on Undergrad Math
 
+- [Linear algebra](linear_algebra)
+
 - [Probability](probability)
 - Statistics
 - Financial mathematics
