@@ -6,7 +6,6 @@ weight: 9990
 ## Pending
 
 - [Introduction to Advanced Calculus](https://www.coursera.org/learn/introduction-to-advanced-calculus)
-- [Algebra: Elementary to Advanced](https://www.coursera.org/specializations/algebra-elementary-to-advanced)
 - [Matrix Algebra](https://www.coursera.org/learn/matrix-algebra-engineers)
 - [Probability Theory](https://www.coursera.org/learn/probability-theory-foundation-for-data-science)
 - [Introduction to Statistics](https://www.coursera.org/learn/stanford-statistics)
