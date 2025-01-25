@@ -140,6 +140,63 @@ Usually delay-0 alphas have higher turnover
 - New high test
   - Reaches a new high in cumulative PnL
 
+## Basic Operators
+
+For official materials, click [here](https://platform.worldquantbrain.com/learn/courses/basic-operators)
+
+**Step sum & IndNeutralize**
+
+```
+group_neutralize(volume / (ts_sum(volume, 60) / 60), sector)
+```
+
+ts_sum(vector, n): n < 512
+
+group_neutralize(alpha x, specified grouping)
+
+Improvement:
+
+```
+ts_step(20) * volume / (ts_sum(volume, 60) / 60)
+```
+
+Weight 20 on current, 19 on yesterday, and so on. This prevent sudden changes.
+
+**Product rank & Signed power operators**
+
+```
+- (today's price - yesterday's price)
+```
+
+```
+Rank(- (close - Ts_Product(close, 5))^(0.2))
+```
+
+SignedPower(x, e): $\text{Sign}(x)\times |x|^e$
+
+**Correlation & Rank operator**
+
+```
+- ts_corr(rank(close), rank(volume / adv20), 5)
+```
+
+ts_corr(x, y, n): correlation of x and y for past n days
+
+1. If the **close price** and **volume ratio** have **increased** more than the other stocks in the universe, the correlation will be **positive**. (Market hasn't absorbed the price information)
+2. If the **close price** and **volume ratio** have **fallen** more than the other stocks in the universe, the correlation will be **positive**. (Market hasn't absorbed the price information)
+3. If the **close price** has increased and the **volume ratio** has fallen as compared to other stocks in the universe, the price trend will likely continue. (Market react intensively)
+4. If the **close price** has fallen and the **volume ratio** has increased as compared to other stocks in the universe, the price trend will likely revert. (Market react intensively)
+
+**Scale & GroupMean operators**
+
+Scale: to combine two ideas
+
+scale(X): make the sum of vector X to be 1
+
+Neutralize: $x-\text{mean}(x)$
+
+
+
 
 
 

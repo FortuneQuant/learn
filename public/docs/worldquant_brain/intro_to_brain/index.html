@@ -31,7 +31,7 @@ Step 2: From each value in the vector, subtract the average of the vector values
 <link rel="canonical" href="http://localhost:1313/learn/docs/worldquant_brain/intro_to_brain/">
 <link rel="stylesheet" href="/learn/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
   <script defer src="/learn/fuse.min.js"></script>
-  <script defer src="/learn/en.search.min.e2ffa2e712a6d0ca3f1303f5d99a270a5b358fd3d9e2934d984950756ccf3432.js" integrity="sha256-4v&#43;i5xKm0Mo/EwP12ZonCls1j9PZ4pNNmElQdWzPNDI=" crossorigin="anonymous"></script>
+  <script defer src="/learn/en.search.min.77b0d676093e17f0605052c29374cb931e76a1c8a91ef7250ac2bcef46b22c10.js" integrity="sha256-d7DWdgk&#43;F/BgUFLCk3TLkx52ocipHvclCsK870ayLBA=" crossorigin="anonymous"></script>
 
   
 
@@ -382,6 +382,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#3-os-test">3. OS test</a></li>
       </ul>
     </li>
+    <li><a href="#basic-operators">Basic Operators</a></li>
   </ul>
 </nav>
 
@@ -555,6 +556,35 @@ $$</p>
 </ul>
 </li>
 </ul>
+<h2 id="basic-operators">
+  Basic Operators
+  <a class="anchor" href="#basic-operators">#</a>
+</h2>
+<p>For official materials, click <a href="https://platform.worldquantbrain.com/learn/courses/basic-operators">here</a></p>
+<p><strong>Step sum &amp; IndNeutralize</strong></p>
+<pre tabindex="0"><code>group_neutralize(volume / (ts_sum(volume, 60) / 60), sector)
+</code></pre><p>ts_sum(vector, n): n &lt; 512</p>
+<p>group_neutralize(alpha x, specified grouping)</p>
+<p>Improvement:</p>
+<pre tabindex="0"><code>ts_step(20) * volume / (ts_sum(volume, 60) / 60)
+</code></pre><p>Weight 20 on current, 19 on yesterday, and so on. This prevent sudden changes.</p>
+<p><strong>Product rank &amp; Signed power operators</strong></p>
+<pre tabindex="0"><code>- (today&#39;s price - yesterday&#39;s price)
+</code></pre><pre tabindex="0"><code>Rank(- (close - Ts_Product(close, 5))^(0.2))
+</code></pre><p>SignedPower(x, e): $\text{Sign}(x)\times |x|^e$</p>
+<p><strong>Correlation &amp; Rank operator</strong></p>
+<pre tabindex="0"><code>- ts_corr(rank(close), rank(volume / adv20), 5)
+</code></pre><p>ts_corr(x, y, n): correlation of x and y for past n days</p>
+<ol>
+<li>If the <strong>close price</strong> and <strong>volume ratio</strong> have <strong>increased</strong> more than the other stocks in the universe, the correlation will be <strong>positive</strong>. (Market hasn&rsquo;t absorbed the price information)</li>
+<li>If the <strong>close price</strong> and <strong>volume ratio</strong> have <strong>fallen</strong> more than the other stocks in the universe, the correlation will be <strong>positive</strong>. (Market hasn&rsquo;t absorbed the price information)</li>
+<li>If the <strong>close price</strong> has increased and the <strong>volume ratio</strong> has fallen as compared to other stocks in the universe, the price trend will likely continue. (Market react intensively)</li>
+<li>If the <strong>close price</strong> has fallen and the <strong>volume ratio</strong> has increased as compared to other stocks in the universe, the price trend will likely revert. (Market react intensively)</li>
+</ol>
+<p><strong>Scale &amp; GroupMean operators</strong></p>
+<p>Scale: to combine two ideas</p>
+<p>scale(X): make the sum of vector X to be 1</p>
+<p>Neutralize: $x-\text{mean}(x)$</p>
 </article>
  
       
@@ -603,6 +633,7 @@ $$</p>
         <li><a href="#3-os-test">3. OS test</a></li>
       </ul>
     </li>
+    <li><a href="#basic-operators">Basic Operators</a></li>
   </ul>
 </nav>
 
