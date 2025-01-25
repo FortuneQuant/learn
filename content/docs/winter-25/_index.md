@@ -27,14 +27,6 @@ Ends on: 2.15
 ### Review on Undergrad Math
 
 - [Linear algebra](linear_algebra)
-
+- [Calculus](calculus)
 - [Probability](probability)
-- Statistics
-- Financial mathematics
-- Numerical analysis
-- Time series analysis
-
-### Review on Finance
-
-- Investment
-- Financial engineering
+- [Statistics](statistics)

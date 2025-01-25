@@ -1,3 +1,0 @@
----
-title: Numerical Analysis
----

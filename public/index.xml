@@ -33,35 +33,14 @@
       <link>http://localhost:1313/learn/docs/winter-25/linear_algebra/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/learn/docs/winter-25/linear_algebra/</guid>
-      <description>Coursera: HKUST Matrix Algebra&#xA;Matrices # Transpose and inverse&#xA;Show using the transpose operator that any square matrix A can be written as the sum of a symmetric and a skew-symmetric matrix.&#xA;Solution: Since $A+A^T$ is symmetric, $A-A^T$ is skew-symmetric $$ A=\frac 12(A+A^T)+\frac 12(A-A^T) $$ Inner and outer products&#xA;Prove that $\text{Tr}(A^TA)$ is the sum of the squares of all the elements of A.&#xA;Solution: Suppose A is m-by-n matrix $$ \text{Tr}(A^TA)=\sum_{j=1}^n[A^TA]{jj}=\sum{j=1}^n\sum_{i=1}^n[a_{ji}^Ta_{ij}]=\sum_{j=1}^n\sum_{i=1}^na_{ij}^2 $$</description>
+      <description>MITOCW: Matrix Methods in Data Analysis, Signal Processing, and Machine Learning&#xA;Textbook and Solutions: Linear Algebra and Learning from Data (2019)</description>
     </item>
     <item>
-      <title>Feng xu (2024)</title>
-      <link>http://localhost:1313/learn/docs/reproduce/feng-xu-2024/</link>
+      <title>Calculus recap</title>
+      <link>http://localhost:1313/learn/docs/winter-25/calculus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/docs/reproduce/feng-xu-2024/</guid>
-      <description> Discovering Logical Formulaic Alphas using Deep Reinforcement Learning # Paper Code </description>
-    </item>
-    <item>
-      <title>Fin Math</title>
-      <link>http://localhost:1313/learn/docs/winter-25/fin_math/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/docs/winter-25/fin_math/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Financial Engineering</title>
-      <link>http://localhost:1313/learn/docs/winter-25/financial_engineering/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/docs/winter-25/financial_engineering/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Investment</title>
-      <link>http://localhost:1313/learn/docs/winter-25/investment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/docs/winter-25/investment/</guid>
-      <description></description>
+      <guid>http://localhost:1313/learn/docs/winter-25/calculus/</guid>
+      <description>Coursera: Introduction to Advanced Calculus</description>
     </item>
     <item>
       <title>ML with python (MITx)</title>
@@ -71,25 +50,11 @@
       <description> micromaster </description>
     </item>
     <item>
-      <title>Naftali Cohen (2020)</title>
-      <link>http://localhost:1313/learn/docs/reproduce/naftali-cohen-2020/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/docs/reproduce/naftali-cohen-2020/</guid>
-      <description> Trading via Image Classification # Paper Code </description>
-    </item>
-    <item>
-      <title>Numerical Analysis</title>
-      <link>http://localhost:1313/learn/docs/winter-25/numerical_analysis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/docs/winter-25/numerical_analysis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ODE</title>
+      <title>ODEs</title>
       <link>http://localhost:1313/learn/docs/winter-25/ode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/learn/docs/winter-25/ode/</guid>
-      <description>Textbook: Ordinary Differential Equation (Zhonglei Wang)</description>
+      <description>Textbook: Ordinary Differential Equation (Zhonglei Wang)&#xA;Coursera: Differential Equations for Engineers (HKUST)</description>
     </item>
     <item>
       <title>Probability recap</title>
@@ -99,18 +64,25 @@
       <description>Textbook: A First Course in Probability&#xA;Coursera: Probability Theory</description>
     </item>
     <item>
-      <title>Statistics</title>
+      <title>Statistics recap</title>
       <link>http://localhost:1313/learn/docs/winter-25/statistics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/learn/docs/winter-25/statistics/</guid>
-      <description></description>
+      <description>Coursera: Introduction to Statistics</description>
     </item>
     <item>
-      <title>Time Series Analysis</title>
-      <link>http://localhost:1313/learn/docs/winter-25/time_series_analysis/</link>
+      <title>Feng xu (2024)</title>
+      <link>http://localhost:1313/learn/docs/reproduce/feng-xu-2024/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learn/docs/winter-25/time_series_analysis/</guid>
-      <description></description>
+      <guid>http://localhost:1313/learn/docs/reproduce/feng-xu-2024/</guid>
+      <description> Discovering Logical Formulaic Alphas using Deep Reinforcement Learning # Paper Code </description>
+    </item>
+    <item>
+      <title>Naftali Cohen (2020)</title>
+      <link>http://localhost:1313/learn/docs/reproduce/naftali-cohen-2020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learn/docs/reproduce/naftali-cohen-2020/</guid>
+      <description> Trading via Image Classification # Paper Code </description>
     </item>
   </channel>
 </rss>
