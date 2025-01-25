@@ -3,17 +3,23 @@
 <head><script src="/learn/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=learn/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Coursera:
-Algebra
-HKUST Matrix Algebra">
+<meta name="description" content="Coursera: HKUST Matrix Algebra
+Matrices # Transpose and inverse
+Show using the transpose operator that any square matrix A can be written as the sum of a symmetric and a skew-symmetric matrix.
+Solution: Since $A&#43;A^T$ is symmetric, $A-A^T$ is skew-symmetric $$ A=\frac 12(A&#43;A^T)&#43;\frac 12(A-A^T) $$ Inner and outer products
+Prove that $\text{Tr}(A^TA)$ is the sum of the squares of all the elements of A.
+Solution: Suppose A is m-by-n matrix $$ \text{Tr}(A^TA)=\sum_{j=1}^n[A^TA]{jj}=\sum{j=1}^n\sum_{i=1}^n[a_{ji}^Ta_{ij}]=\sum_{j=1}^n\sum_{i=1}^na_{ij}^2 $$">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/learn/docs/winter-25/linear_algebra/">
   <meta property="og:site_name" content="Self-Learn">
   <meta property="og:title" content="Linear Algebra">
-  <meta property="og:description" content="Coursera:
-Algebra
-HKUST Matrix Algebra">
+  <meta property="og:description" content="Coursera: HKUST Matrix Algebra
+Matrices # Transpose and inverse
+Show using the transpose operator that any square matrix A can be written as the sum of a symmetric and a skew-symmetric matrix.
+Solution: Since $A&#43;A^T$ is symmetric, $A-A^T$ is skew-symmetric $$ A=\frac 12(A&#43;A^T)&#43;\frac 12(A-A^T) $$ Inner and outer products
+Prove that $\text{Tr}(A^TA)$ is the sum of the squares of all the elements of A.
+Solution: Suppose A is m-by-n matrix $$ \text{Tr}(A^TA)=\sum_{j=1}^n[A^TA]{jj}=\sum{j=1}^n\sum_{i=1}^n[a_{ji}^Ta_{ij}]=\sum_{j=1}^n\sum_{i=1}^na_{ij}^2 $$">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -23,7 +29,7 @@ HKUST Matrix Algebra">
 <link rel="canonical" href="http://localhost:1313/learn/docs/winter-25/linear_algebra/">
 <link rel="stylesheet" href="/learn/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
   <script defer src="/learn/fuse.min.js"></script>
-  <script defer src="/learn/en.search.min.2b3414dd3cc59d820ba8cd810b51e3527439dfd7be5edad8edda844d3549da63.js" integrity="sha256-KzQU3TzFnYILqM2BC1HjUnQ539e&#43;XtrY7dqETTVJ2mM=" crossorigin="anonymous"></script>
+  <script defer src="/learn/en.search.min.b8ff1ae270d19386366128c5d2d80f5b9bf9ed3e6a5d9720b5c8cb3138ad9915.js" integrity="sha256-uP8a4nDRk4Y2YSjF0tgPW5v57T5qXZcgtcjLMTitmRU=" crossorigin="anonymous"></script>
 
   
 
@@ -361,7 +367,11 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#matrices">Matrices</a></li>
+  </ul>
+</nav>
 
 
 
@@ -372,15 +382,27 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><p>Coursera:</p>
-<ol>
-<li>
-<p><a href="https://www.coursera.org/specializations/algebra-elementary-to-advanced">Algebra</a></p>
-</li>
-<li>
-<p><a href="https://www.coursera.org/learn/matrix-algebra-engineers">HKUST Matrix Algebra</a></p>
-</li>
-</ol>
+  <article class="markdown book-article"><p>Coursera: <a href="https://www.coursera.org/learn/matrix-algebra-engineers">HKUST Matrix Algebra</a></p>
+<h2 id="matrices">
+  Matrices
+  <a class="anchor" href="#matrices">#</a>
+</h2>
+<p><strong>Transpose and inverse</strong></p>
+<blockquote>
+<p>Show using the transpose operator that any square matrix A can be written as the sum of a symmetric and a skew-symmetric matrix.</p>
+</blockquote>
+<p>Solution: Since $A+A^T$ is symmetric, $A-A^T$ is skew-symmetric
+$$
+A=\frac 12(A+A^T)+\frac 12(A-A^T)
+$$
+<strong>Inner and outer products</strong></p>
+<blockquote>
+<p>Prove that $\text{Tr}(A^TA)$ is the sum of the squares of all the elements of A.</p>
+</blockquote>
+<p>Solution: Suppose A is m-by-n matrix
+$$
+\text{Tr}(A^TA)=\sum_{j=1}^n[A^TA]<em>{jj}=\sum</em>{j=1}^n\sum_{i=1}^n[a_{ji}^Ta_{ij}]=\sum_{j=1}^n\sum_{i=1}^na_{ij}^2
+$$</p>
 </article>
  
       
@@ -420,7 +442,11 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#matrices">Matrices</a></li>
+  </ul>
+</nav>
 
 
  

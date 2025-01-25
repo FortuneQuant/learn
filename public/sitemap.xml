@@ -12,6 +12,8 @@
   </url><url>
     <loc>http://localhost:1313/learn/docs/winter-25/dl/</loc>
   </url><url>
+    <loc>http://localhost:1313/learn/docs/winter-25/linear_algebra/</loc>
+  </url><url>
     <loc>http://localhost:1313/learn/docs/pending/</loc>
   </url><url>
     <loc>http://localhost:1313/learn/docs/reproduce/</loc>
@@ -31,8 +33,6 @@
     <loc>http://localhost:1313/learn/</loc>
   </url><url>
     <loc>http://localhost:1313/learn/docs/winter-25/investment/</loc>
-  </url><url>
-    <loc>http://localhost:1313/learn/docs/winter-25/linear_algebra/</loc>
   </url><url>
     <loc>http://localhost:1313/learn/docs/winter-25/ml_with_python/</loc>
   </url><url>
