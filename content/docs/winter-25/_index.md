@@ -30,3 +30,10 @@ Ends on: 2.15
 - [Calculus](calculus)
 - [Probability](probability)
 - [Statistics](statistics)
+
+| Date | Linear algebra | Deep learning | MITx | ODE  | BRAIN | Calculus | Probability | Statistics |
+| ---- | -------------- | ------------- | ---- | ---- | ----- | -------- | ----------- | ---------- |
+| 1.27 | Lec1+HW1 📌     |               |      |      |       |          |             |            |
+| 1.28 | Lec2+HW2       | HW 1          |      |      |       |          |             |            |
+|      |                |               |      |      |       |          |             |            |
+

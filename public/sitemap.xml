@@ -14,6 +14,8 @@
   </url><url>
     <loc>http://localhost:1313/learn/docs/winter-25/linear_algebra/</loc>
   </url><url>
+    <loc>http://localhost:1313/learn/docs/winter-25/calculus/</loc>
+  </url><url>
     <loc>http://localhost:1313/learn/docs/winter-25/ml_with_python/</loc>
   </url><url>
     <loc>http://localhost:1313/learn/docs/winter-25/ode/</loc>
@@ -34,20 +36,10 @@
   </url><url>
     <loc>http://localhost:1313/learn/docs/reproduce/feng-xu-2024/</loc>
   </url><url>
-    <loc>http://localhost:1313/learn/docs/winter-25/fin_math/</loc>
-  </url><url>
-    <loc>http://localhost:1313/learn/docs/winter-25/financial_engineering/</loc>
-  </url><url>
     <loc>http://localhost:1313/learn/</loc>
-  </url><url>
-    <loc>http://localhost:1313/learn/docs/winter-25/investment/</loc>
   </url><url>
     <loc>http://localhost:1313/learn/docs/reproduce/naftali-cohen-2020/</loc>
   </url><url>
-    <loc>http://localhost:1313/learn/docs/winter-25/numerical_analysis/</loc>
-  </url><url>
     <loc>http://localhost:1313/learn/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/learn/docs/winter-25/time_series_analysis/</loc>
   </url>
 </urlset>
