@@ -2,6 +2,7 @@
 title: Winter 25
 weight: 10
 bookCollapseSection: true
+math: true
 ---
 
 ## Schedule
@@ -31,9 +32,11 @@ Ends on: 2.15
 - [Probability](probability)
 - [Statistics](statistics)
 
-| Date | Linear algebra | Deep learning | MITx | ODE  | BRAIN | Calculus | Probability | Statistics |
-| ---- | -------------- | ------------- | ---- | ---- | ----- | -------- | ----------- | ---------- |
-| 1.27 | Lec1+HW1 📌     |               |      |      |       |          |             |            |
-| 1.28 | Lec2+HW2       | HW 1          |      |      |       |          |             |            |
-|      |                |               |      |      |       |          |             |            |
+| Date | Linear algebra | Deep learning | MITx | ODE  |
+| ---- | -------------- | ------------- | ---- | ---- |
+| 1.27 | Lec1+HW1       |               |      |      |
+| 1.28 | Note1          |               |      |      |
+| 1.29 | Lec2 📌         |               |      |      |
+| 1.30 | HW2+Note2      | HW1           | HW0  |      |
+|      |                |               |      |      |
 

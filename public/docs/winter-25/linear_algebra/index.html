@@ -4,14 +4,20 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="MITOCW: Matrix Methods in Data Analysis, Signal Processing, and Machine Learning
-Textbook: Linear Algebra and Learning from Data (2019), website click here">
+Textbook: Linear Algebra and Learning from Data (2019), website click here
+Problems # Section I.1 | 18. If $A = CR$, what are the $C$ and $R$ factors of the matrix $\begin{bmatrix} 0 &amp; A \\ 0 &amp; A \end{bmatrix}$?
+Notes # Factoring matrix $A$ # Factorization $A=CR$, $R=\text{rref}(A)=\text{row-reduced echelon form of A}$
+row space of A = $C(A^T)$">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/learn/docs/winter-25/linear_algebra/">
   <meta property="og:site_name" content="Self-Learn">
   <meta property="og:title" content="Linear Algebra">
   <meta property="og:description" content="MITOCW: Matrix Methods in Data Analysis, Signal Processing, and Machine Learning
-Textbook: Linear Algebra and Learning from Data (2019), website click here">
+Textbook: Linear Algebra and Learning from Data (2019), website click here
+Problems # Section I.1 | 18. If $A = CR$, what are the $C$ and $R$ factors of the matrix $\begin{bmatrix} 0 &amp; A \\ 0 &amp; A \end{bmatrix}$?
+Notes # Factoring matrix $A$ # Factorization $A=CR$, $R=\text{rref}(A)=\text{row-reduced echelon form of A}$
+row space of A = $C(A^T)$">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -21,7 +27,7 @@ Textbook: Linear Algebra and Learning from Data (2019), website click here">
 <link rel="canonical" href="http://localhost:1313/learn/docs/winter-25/linear_algebra/">
 <link rel="stylesheet" href="/learn/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
   <script defer src="/learn/fuse.min.js"></script>
-  <script defer src="/learn/en.search.min.c0767f7a4ff61679c2dfae7014f71b24a88939ce2c7ab5d606f78d96c3149cc4.js" integrity="sha256-wHZ/ek/2FnnC365wFPcbJKiJOc4serXWBveNlsMUnMQ=" crossorigin="anonymous"></script>
+  <script defer src="/learn/en.search.min.f1df18b76bcf6d136773c1f08cd2d07726453e1fe02731197bac81a3ded1df94.js" integrity="sha256-8d8Yt2vPbRNnc8HwjNLQdyZFPh/gJzEZe6yBo97R35Q=" crossorigin="anonymous"></script>
 
   
 
@@ -30,6 +36,23 @@ Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
   
+  
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+
   
 </head>
 <body dir="ltr">
@@ -373,7 +396,16 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#problems">Problems</a></li>
+    <li><a href="#notes">Notes</a>
+      <ul>
+        <li><a href="#factoring-matrix-a">Factoring matrix $A$</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -386,6 +418,59 @@ https://github.com/alex-shpak/hugo-book
       
   <article class="markdown book-article"><p>MITOCW: <a href="https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/">Matrix Methods in Data Analysis, Signal Processing, and Machine Learning</a></p>
 <p>Textbook: <a href="https://www.zotero.org/dafuzhu123/collections/R28S2AQK/items/IQNNZ39I/reader">Linear Algebra and Learning from Data (2019)</a>, website click <a href="https://math.mit.edu/~gs/learningfromdata/">here</a></p>
+<h2 id="problems">
+  Problems
+  <a class="anchor" href="#problems">#</a>
+</h2>
+<p>Section I.1 | 18. If $A = CR$, what are the $C$ and $R$ factors of the matrix $\begin{bmatrix}
+0 &amp; A \\
+0 &amp; A
+\end{bmatrix}$?</p>
+<h2 id="notes">
+  Notes
+  <a class="anchor" href="#notes">#</a>
+</h2>
+<h3 id="factoring-matrix-a">
+  Factoring matrix $A$
+  <a class="anchor" href="#factoring-matrix-a">#</a>
+</h3>
+<p>Factorization $A=CR$, $R=\text{rref}(A)=\text{row-reduced echelon form of A}$</p>
+<p>row space of A = $C(A^T)$</p>
+<p>$A=\mathbf{CMR}\xrightarrow{\mathbf{C^T}A\mathbf{R^T}}\mathbf{M}=\mathbf{(C^T C)^{-1}(C^T} A\mathbf{R^T)(RR^T)^{-1}}$</p>
+<p>Insights on <strong>Elimination</strong> $A=LU$
+$$
+A=\begin{bmatrix}
+a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\
+a_{21} &amp; &amp; &amp; \\
+\vdots &amp; &amp; \cdots &amp; \\
+a_{m1} &amp; &amp; &amp; \\
+\end{bmatrix}
+=(\text{col}1)(\text{row}1)+
+\begin{bmatrix}
+0 &amp; 0 &amp; \cdots &amp; 0\\
+0 &amp; &amp; &amp; \\
+\vdots &amp; &amp; A_2 &amp; \\
+0 &amp; &amp; &amp; \\
+\end{bmatrix}=\cdots
+$$</p>
+<p>$$
+LU=\begin{bmatrix}
+\\
+l_1\\
+\\
+\end{bmatrix}
+\begin{bmatrix}
+&amp; u_1^T &amp;
+\end{bmatrix}+
+\begin{bmatrix}
+\\
+l_2\\
+\\
+\end{bmatrix}
+\begin{bmatrix}
+&amp; u_2^T &amp;
+\end{bmatrix}+\cdots
+$$</p>
 </article>
  
       
@@ -425,7 +510,16 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#problems">Problems</a></li>
+    <li><a href="#notes">Notes</a>
+      <ul>
+        <li><a href="#factoring-matrix-a">Factoring matrix $A$</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
  
